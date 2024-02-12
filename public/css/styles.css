@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.NavBar {
+    height: 60px;
+    background-color: rgb(255, 255, 255)fff; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0 44px;
+    border-bottom: 3px solid #ff0000;
+
+}
+
+.NavBar .container-logo img {
+    max-width: 170px; 
+    height: auto; 
+    margin-bottom: 5px;
+
+}
+
+.NavBar ul {
+    list-style-type: none; 
+    display: flex; 
+}
+
+.NavBar ul li {
+    margin-right: 20px; 
+}
+
+.NavBar ul li:last-child {
+    margin-right: 0; 
+}
+
+.NavBar ul li a {
+    text-decoration: none; 
+    color: #000000; 
+    font-weight: bold; 
+}
+
+.NavBar ul li a:hover {
+    color: #ff0000; 
+}
+
+
+/*Body*/
+.container-body{
+    min-height: calc(100vh - 60px - 110px);
+    position: relative;
+    z-index: 0;
+    align-items: center;
+}
+
+/*partial produto*/
+.produtoPartial{
+    max-width: 300px;
+    box-sizing: border-box;
+    margin: 5px;
+    display: flex; 
+    flex-direction: column; 
+}
+.produtoPartial img {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: 2px solid #ff0000;
+    cursor: pointer;
+}
+.produtoPartial h2 {
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    text-align: left;
+    cursor: pointer;
+}
+.produtoPartial p {
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.pricing{
+    display: flex;
+}
+.PricePartial{
+    padding-right: 4px;
+    background-color: #c0c0c0;
+    color: #131313;
+    text-align: left;
+    padding: 5px;
+    border-radius: 4px  0px 0px 4px;
+}
+.produtoPartial span{
+    background-color: #ff0000;
+    color: #fff;
+    text-align: left;
+    padding: 5px;
+    border-radius: 0px  4px 4px 0px;
+}
+.Buton-Container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.produtoPartial a, .btn {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #ff0000;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+/*grid produtos*/
+.prodGrid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
+    height: 100%;
+    align-items: start;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 10px;
+}
+
+/*pagina de produto */
+.return{
+    text-align: center;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px;
+    position: relative;
+    z-index: 2;
+    text-decoration: none;
+}
+.return a {
+    color: #fff;
+    text-decoration: none;
+}
+.return a:hover, .return:hover {
+    color:#fff;
+    background-color: #131313;
+}
+
+.prodPage{
+    display: flexbox;
+}
+.coluna {
+    width: 50%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.coluna h1 {
+    margin-top: 20%;
+}
+.coluna img {
+    max-width: 80%;
+    text-align: center;
+}
+.precoProd {
+    display: flex;
+}
+.PrecoAProd {
+    background-color: #c0c0c0;
+    color: #131313;
+    padding: 15px 0px 15px 15px;
+    font-size: large;
+    border-radius: 4px 0px 0px 4px;
+}
+.precoProd span {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 15px;
+    font-size: large;
+    border-radius: 0px 4px 4px 0px;
+}
+
+
+
+
+/*Rodapé*/
+footer{
+    position: relative; /* Mantém o posicionamento relativo */
+    background-color: #000000;
+    border-top: 3px solid #ff0000;
+    z-index: 10;
+    width: 100%;
+
+}
+.footer-container{
+    display: flex !important;
+    padding: 35px !important;
+    justify-content: space-between !important;
+    color: #fff;
+}
+.coluna ul{
+    list-style: none !important;
+    margin-left: 35px !important;
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
+    color: #fff;
+}
+.coluna ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+.coluna ul li a:hover {
+    color: #ff0000;
+    background-color: #fff;
+    padding: 4px;
+}
+.coluna p{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
